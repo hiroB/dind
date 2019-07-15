@@ -30,7 +30,7 @@ RUN RUBY_BUILD_DIR="${RBENV_ROOT}/plugins/ruby-build" \
   && cd "${RUBY_BUILD_DIR}" \
   && git checkout "${RUBY_BUILD_VERSION}" \
   && rm -rf .git \
-  && ./install.sh"
+  && sh ./install.sh"
 
 # install runtimes and bundler
 ENV BUNDLE_JOBS=2 BUNDLE_PATH=/bundle BUNDLER_VERSION=2.0.2
