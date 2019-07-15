@@ -29,7 +29,7 @@ RUN RUBY_BUILD_DIR="${RBENV_ROOT}/plugins/ruby-build" \
   && git clone https://github.com/rbenv/ruby-build.git "${RUBY_BUILD_DIR}" \
   && cd "${RUBY_BUILD_DIR}" \
   && git checkout "${RUBY_BUILD_VERSION}" \
-  && rm -rf .git
+  && rm -rf .git \
   && ./install.sh"
 
 # install runtimes and bundler
